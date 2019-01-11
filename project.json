@@ -1,0 +1,102 @@
+{
+	"description" : "就是拿那个辉光钟改的，自己用\r\n其实就是加了闪烁and只有一个样式，默认居中\r\n因为时钟是固定大小的，有同为1080分辨率的的外加觉得还可以的就试试呗\r\n侵删\r\n\r\n做了个添加了世界线变动率探测的功能的版本，链接↓\r\nhttp://steamcommunity.com/sharedfiles/filedetails/?id=883945381\r\n点击时钟就可以显示世界线变功率，欢迎订阅~\r\n\r\n加个原版的dalao的链接↓\r\nhttp://steamcommunity.com/sharedfiles/fil",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"CPosition" : 
+			{
+				"text" : "居中",
+				"type" : "bool",
+				"value" : true
+			},
+			"Drag" : 
+			{
+				"condition" : "!CPosition.value",
+				"text" : "锁定",
+				"type" : "bool",
+				"value" : false
+			},
+			"abool" : 
+			{
+				"text" : "使用默认壁纸",
+				"type" : "bool",
+				"value" : true
+			},
+			"balpha" : 
+			{
+				"max" : 100,
+				"min" : 0,
+				"text" : "透明度",
+				"type" : "slider",
+				"value" : 100
+			},
+			"bimage" : 
+			{
+				"text" : "设置壁纸",
+				"type" : "file"
+			},
+			"combo" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "填充",
+						"value" : "cover"
+					},
+					{
+						"label" : "拉伸",
+						"value" : "contain"
+					},
+					{
+						"label" : "平铺",
+						"value" : "auto"
+					}
+				],
+				"text" : "壁纸显示方式",
+				"type" : "combo",
+				"value" : "cover"
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"time1" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "12h制",
+						"value" : 12
+					},
+					{
+						"label" : "24h制",
+						"value" : 24
+					}
+				],
+				"text" : "小时制",
+				"type" : "combo",
+				"value" : 12
+			},
+			"jump_time" :
+			{
+				"max" : 3600000,
+				"min" : 60000,
+				"text" : "世界线变动间隔",
+				"type" : "slider",
+				"value" : 600000
+			}
+		}
+	},
+	"monetization" : false,
+	"preview" : "preview.jpg",
+	"tags" : [ "Anime" ],
+	"title" : "Nixie Clock(personal)",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : 843901179
+}
